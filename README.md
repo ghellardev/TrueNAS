@@ -46,6 +46,20 @@ before Terraform is allowed to manage it.
 
 Never commit API keys, Terraform state files or other secrets.
 
-## Status
+## Project Status
 
-Initial project scaffolding.
+Active development.
+
+### Completed
+- [x] Project structure established.
+- [x] GitHub repository configured.
+- [x] Terraform provider installed.
+- [x] TrueNAS API connectivity verified.
+- [x] Initial read-only inventory implemented.
+
+### Planned
+- [ ] Complete hardware inventory.
+- [ ] Document ZFS pools and datasets.
+- [ ] Document applications and networking.
+- [ ] Import existing resources where appropriate.
+- [ ] Expand infrastructure management.

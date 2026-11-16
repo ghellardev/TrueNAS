@@ -43,3 +43,16 @@ inventory/*.yml
 .idea/
 Thumbs.db
 .DS_Store
+
+# Private keys and certificates
+*.pem
+*.key
+secrets/
+
+# Backups
+*.bak
+*.old
+*.backup
+
+# Local reports
+provider-summary.txt
