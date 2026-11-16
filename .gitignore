@@ -1,37 +1,45 @@
-# Terraform
+
+# Terraform working directory
 **/.terraform/*
+
+# Terraform state
 *.tfstate
 *.tfstate.*
+*.tfstate.backup
+
+# Terraform plans
 *.tfplan
+*.plan
+
+# Variable files and secrets
+*.tfvars
+*.tfvars.json
+*.auto.tfvars
+*.auto.tfvars.json
+
+# Crash logs
 crash.log
 crash.*.log
+
+# Local overrides
 override.tf
 override.tf.json
 *_override.tf
 *_override.tf.json
 
-# Keep provider lock file under version control
-!**/.terraform.lock.hcl
+# Local inventory and hardware dumps
+provider-schema.json
+inventory/*.json
+inventory/*.yaml
+inventory/*.yml
 
-# Sensitive variables and credentials
-*.tfvars
-!*.tfvars.example
+# Credentials
 .env
 .env.*
 !.env.example
-*.pem
-*.key
-secrets/
 
-# Backups
-*.bak
-*.old
-*.backup
-
-# Windows
+# Editor / OS
+.vscode/
+.idea/
 Thumbs.db
-Desktop.ini
-
-# VS Code
-.vscode/*
-!.vscode/extensions.json
+.DS_Store
