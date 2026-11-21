@@ -23,9 +23,9 @@ Run these commands from this directory, or use the repository's PowerShell helpe
 
 Pool and dataset declarations use prevent-destroy lifecycle rules, but those rules do not make an unreviewed plan safe and do not replace verified imports and backups.
 
-## Provider
+## Versions and provider
 
-The required provider is truenas/truenas, with the version constraint and lock file maintained in this directory. See the [provider documentation](https://registry.terraform.io/providers/truenas/truenas/latest/docs).
+The root module requires Terraform CLI 1.11.0 or newer. The required provider is truenas/truenas with a ~> 1.9 version constraint; the lock file records the selected provider package. See the [provider documentation](https://registry.terraform.io/providers/truenas/truenas/latest/docs).
 
 ## Configuration notes
 

@@ -49,6 +49,10 @@ The current files are therefore not read-only as a whole. A Terraform plan may p
 
 These are repository declarations and comments. Verify each item on the live system; see [hardware](02-hardware.md), [storage](04-storage-design.md), and [applications](05-applications.md).
 
+## Inventory outputs
+
+Terraform outputs currently expose the configured hostname, DNS servers, Docker storage pool and dataset, NVIDIA setting, timezone, system dataset, SSH/SMB/NFS configuration, and selected service status. These values are produced from a mixture of read-only data sources and managed resource attributes. Check the relevant output and its source before treating it as observed live state.
+
 ## Outstanding architecture facts
 
 - TrueNAS SCALE version and current host configuration.
